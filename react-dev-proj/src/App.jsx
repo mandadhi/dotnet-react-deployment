@@ -7,7 +7,7 @@ function App() {
 
   const fetchWeatherData = async () => {
     try {
-      const response = await fetch('http://localhost:5153/weatherforecast');
+      const response = await fetch('http://localhost:5153/weatherforecast'); //if using github codespaces then use the <URL> provided by the codespace
       const data = await response.json();
       setWeatherData(data);
     } catch (error) {
